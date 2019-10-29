@@ -1578,3 +1578,7 @@ TEST_F(FunctionalTest, PoissonNLLLoss) {
   ASSERT_THROWS_WITH(F::poisson_nll_loss(input, target,
     PoissonNLLLossOptions().reduction(Reduction::END)), "not valid");
 }
+
+TEST_F(FunctionalTest, BCEWithLogitsLoss) {
+  // TODO
+}
